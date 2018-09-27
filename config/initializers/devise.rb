@@ -9,7 +9,8 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '69d48ec89a92f965e6d26116a136553f276b5da238501f91faa99b5251fb8d6cac92c91eecbcc821837ef32bc63da510cf2c2037c301e701d8888b838dd4d043'
-  
+  config.secret_key = "d08733c1003f67ecda0ecdb883d0e5135aefe2236b04d5de6a41431eb11acfb7b09b25b3fbb31f6f110abcdd1983c3d50d2323eaa7f247fd81669fd908ccdd69"
+
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
@@ -249,6 +250,7 @@ Devise.setup do |config|
   #
   # The "*/*" below is required to match Internet Explorer requests.
   # config.navigational_formats = ['*/*', :html]
+  config.navigational_formats = []
 
   # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = :delete
