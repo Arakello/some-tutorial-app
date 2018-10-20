@@ -1,6 +1,9 @@
 %nav.navbar.navbar-default.navbar-inverse
   .container
-    %ul.nav.navbar-nav.navbar-header.navbar-right
-      %li= link_to "Home",   root_path
-      %li= link_to "Register"
-      %li= link_to "Log in"
+    .row
+      / Elements visible all the time
+      .col-sm-7
+        =render 'layouts/navigation/header'
+      / Elements collapses on smaller devices
+      .col-sm-5
+        =render 'layouts/navigation/collapsible_elements'
