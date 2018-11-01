@@ -38,6 +38,10 @@ group :development, :test do
   gem 'pry-rails'
   gem 'html2haml'
   gem 'faker'
+  gem 'poltergeist'
+  gem 'capybara'
+  gem 'headless'
+  gem 'rails-controller-testing'
 end
 
 group :development do
