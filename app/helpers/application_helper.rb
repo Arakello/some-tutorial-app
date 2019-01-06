@@ -2,6 +2,7 @@ require 'navigation_helper.rb'
 
 module ApplicationHelper
   include NavigationHelper
+  include PostsHelper
 
   def flash_class(level)
     case level
